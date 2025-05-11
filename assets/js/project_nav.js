@@ -9,8 +9,6 @@ function getTranslation(langData, key) {
 }
 
 function renderProjectNav(langData) {
-    document.querySelector(".project-nav")?.remove();  
-
     const currentFile = location.pathname.split("/").pop();
     const index = projectPages.findIndex(p => p.file === currentFile);
     if (index === -1) return;
@@ -45,5 +43,9 @@ function renderProjectNav(langData) {
         navContainer.appendChild(next);
     }
 
-    document.querySelector("main").appendChild(navContainer);
+    const navPlaceholder = document.getElementById("project-nav");
+    if (navPlaceholder) {
+        navPlaceholder.innerHTML = "";
+        navPlaceholder.appendChild(navContainer);
+    }
 }
