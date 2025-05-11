@@ -13,15 +13,18 @@ function renderProjectNav(langData) {
     const index = projectPages.findIndex(p => p.file === currentFile);
     if (index === -1) return;
 
+    const oldNav = document.querySelector(".project-nav");
+    if (oldNav) oldNav.remove();
+
     const navContainer = document.createElement("div");
     navContainer.className = "project-nav";
 
     if (index > 0) {
-    const prev = document.createElement("a");
-    prev.href = projectPages[index - 1].file;
-    prev.className = "nav-btn prev";
-    prev.innerHTML = `← ${getTranslation(langData, projectPages[index - 1].key)}`;
-    navContainer.appendChild(prev);
+        const prev = document.createElement("a");
+        prev.href = projectPages[index - 1].file;
+        prev.className = "nav-btn prev";
+        prev.innerHTML = `← ${getTranslation(langData, projectPages[index - 1].key)}`;
+        navContainer.appendChild(prev);
     }
 
     const back = document.createElement("a");
@@ -36,11 +39,11 @@ function renderProjectNav(langData) {
     navContainer.appendChild(position);
 
     if (index < projectPages.length - 1) {
-    const next = document.createElement("a");
-    next.href = projectPages[index + 1].file;
-    next.className = "nav-btn next";
-    next.innerHTML = `${getTranslation(langData, projectPages[index + 1].key)} →`;
-    navContainer.appendChild(next);
+        const next = document.createElement("a");
+        next.href = projectPages[index + 1].file;
+        next.className = "nav-btn next";
+        next.innerHTML = `${getTranslation(langData, projectPages[index + 1].key)} →`;
+        navContainer.appendChild(next);
     }
 
     document.querySelector("main").appendChild(navContainer);
