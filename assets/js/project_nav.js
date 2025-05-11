@@ -11,12 +11,16 @@ function getTranslation(langData, key) {
 function renderProjectNav(langData) {
     const currentFile = location.pathname.split("/").pop();
     const index = projectPages.findIndex(p => p.file === currentFile);
-    if (index === -1) return; // No es una página de proyecto válida
+    console.log("Renderizando navegación para:", currentFile);  // Aquí
+
+    if (index === -1) return;  // Si no se encuentra el archivo en el array, no hace nada
 
     const navContainer = document.createElement("div");
     navContainer.className = "project-nav";
 
-    // Navegación anterior
+    // Aquí puedes agregar más logs para ver si la lógica de navegación se ejecuta bien
+    console.log("Índice del proyecto:", index);
+    
     if (index > 0) {
         const prev = document.createElement("a");
         prev.href = projectPages[index - 1].file;
@@ -25,20 +29,17 @@ function renderProjectNav(langData) {
         navContainer.appendChild(prev);
     }
 
-    // Botón de regresar a la lista de proyectos
     const back = document.createElement("a");
     back.href = "../projects.html";
     back.className = "nav-btn back";
     back.innerText = getTranslation(langData, "project.back");
     navContainer.appendChild(back);
 
-    // Posición del proyecto actual
     const position = document.createElement("div");
     position.className = "project-position";
     position.innerText = `${index + 1} / ${projectPages.length}`;
     navContainer.appendChild(position);
 
-    // Navegación siguiente
     if (index < projectPages.length - 1) {
         const next = document.createElement("a");
         next.href = projectPages[index + 1].file;
@@ -47,9 +48,10 @@ function renderProjectNav(langData) {
         navContainer.appendChild(next);
     }
 
-    // Agregar la navegación a la página
     const mainElement = document.querySelector("main");
     if (mainElement) {
         mainElement.appendChild(navContainer);
+    } else {
+        console.error("No se encuentra el elemento 'main'");
     }
 }
