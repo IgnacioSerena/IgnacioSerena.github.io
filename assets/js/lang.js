@@ -30,10 +30,16 @@ function loadLang(lang) {
         if (translation) el.innerText = translation;
       });
 
-      if (location.pathname.includes("/projects/")) {
+      // Solo agrega la navegación de proyecto si es una página de detalle de proyecto
+      const currentFile = location.pathname.split("/").pop();
+
+      // Verificar si estamos en un proyecto y si no hemos añadido la navegación ya
+      const isProjectDetail = projectPages.some(p => p.file === currentFile);
+      const navExists = document.querySelector(".project-nav");
+
+      if (isProjectDetail && !navExists) {
         renderProjectNav(data);
-      } 
-      
+      }   
     });
 }
 
