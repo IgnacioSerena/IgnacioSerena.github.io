@@ -30,12 +30,15 @@ function loadLang(lang) {
         if (translation) el.innerText = translation;
       });
 
-      // Si estamos en una página de proyecto, añade navegación
-      if (location.pathname.includes("/projects/")) {
+      // Solo renderiza navegación si es una página de detalle de proyecto
+      const currentFile = location.pathname.split("/").pop();
+      const isProjectDetail = projectPages.some(p => p.file === currentFile);
+      if (isProjectDetail) {
         renderProjectNav(data);
       }
     });
 }
+
 
 window.addEventListener('DOMContentLoaded', () => {
   const lang = localStorage.getItem('lang') || defaultLang;
