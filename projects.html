@@ -1,0 +1,73 @@
+<!-- Página de proyectos -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="nav.projects">Projects</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/lang.js"></script>
+  <script defer src="assets/js/theme.js"></script>
+</head>
+<body>
+  <header>
+    <h1 id="site-title">Ignacio Serena Montiel</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home"></a></li>
+        <li><a href="projects.html" data-i18n="nav.projects"></a></li>
+        <li><a href="contact.html" data-i18n="nav.contact"></a></li>
+        <li class="lang-switcher">
+          <div class="dropdown">
+            <button class="dropbtn">
+              <img id="current-flag" src="assets/img/flags/en.svg" alt="Language" />
+            </button>
+            <div class="dropdown-content">
+              <img src="assets/img/flags/en.svg" onclick="setLang('en')" alt="English" />
+              <img src="assets/img/flags/es.svg" onclick="setLang('es')" alt="Español" />
+            </div>
+          </div>
+        </li>
+        <li class="theme-toggle">
+          <button onclick="toggleTheme()" id="theme-button">🌙</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 data-i18n="projects.title"></h2>
+
+    <div class="project">
+      <h3><a href="projects/http_server.html" data-i18n="projects.http_server_title"></a></h3>
+      <p data-i18n="projects.http_server"></p>
+      <p><a href="https://github.com/IgnacioSerena/http_server" target="_blank">🔗 GitHub</a></p>
+    </div>
+
+    <div class="project">
+      <h3><a href="projects/Game-of-the-ant.html" data-i18n="projects.Game-of-the-ant_title"></a></h3>
+      <p data-i18n="projects.libpcap"></p>
+      <p><a href="https://github.com/paterson3c/Game-of-the-ant" target="_blank">🔗 GitHub</a></p>
+    </div>
+
+    <div class="project">
+      <h3><a href="projects/Sistema-Domotico.html" data-i18n="projects.Sistema-Domotico_title"></a></h3>
+      <p data-i18n="projects.libpcap"></p>
+      <p><a href="https://github.com/IgnacioSerena/Sistema-Domotico" target="_blank">🔗 GitHub</a></p>
+    </div>
+  </main>
+
+  <section class="project future">
+    <h3 data-i18n="projects.coming_soon_title">🚧 More Projects Coming Soon</h3>
+    <p data-i18n="projects.coming_soon_desc">
+      I’m currently working on machine learning, networking, and backend-related projects. Stay tuned for updates!
+    </p>
+  </section>  
+
+  <footer>
+    <p>© 2025 Ignacio Serena Montiel — IgnacioSerena. <span data-i18n="footer.license"></span>
+      <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>
+    </p>
+  </footer>
+</body>
+</html>

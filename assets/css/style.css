@@ -1,0 +1,379 @@
+/* Estilos básicos del sitio */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* más suave que blanco */
+    color: #2b2b2b;
+    max-width: 900px;
+    margin: auto;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 1em 2em;
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#site-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a,
+.lang-switcher button {
+    text-decoration: none;
+    color: #005f99;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0.2em 0.5em;
+    transition: color 0.2s ease;
+}
+
+.lang-switcher button:hover,
+nav a:hover {
+    color: #004577;
+    text-decoration: underline;
+}
+
+main {
+    padding: 2em;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.project {
+    margin-bottom: 2em;
+    padding: 1em;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.project:hover {
+    background-color: #e8f4fc;
+}
+
+.project h3 a {
+    color: #005f99;
+    transition: color 0.2s ease;
+}
+
+.project h3 a:hover {
+    color: #003f73;
+}
+
+.cv-links a {
+    display: inline-block;
+    margin-right: 1em;
+    margin-top: 1em;
+    text-decoration: none;
+    color: #fff;
+    background-color: #005f99;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cv-links a:hover {
+    background-color: #004577;
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    padding: 1em;
+    border-top: 1px solid #dddddd;
+    margin-top: 2em;
+}
+
+/* Language selector dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn img {
+    width: 24px;
+    height: auto;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown-content img {
+    width: 24px;
+    height: auto;
+    margin: 0.2em;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.dropdown-content img:hover {
+    transform: scale(1.1);
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    gap: 0.5em;
+}
+
+/* Botón modo oscuro */
+.theme-toggle button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+/* Secciones adicionales */
+.certifications {
+    margin-top: 2em;
+}
+
+.certifications h2 {
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+.certifications ul {
+    list-style: none;
+    padding-left: 1em;
+}
+
+.certifications ul li {
+    margin-bottom: 0.4em;
+    padding-left: 1.2em;
+    position: relative;
+}
+
+.certifications ul li::before {
+    content: '✔️';
+    position: absolute;
+    left: 0;
+}
+
+.skills {
+    margin-top: 2em;
+}
+
+.skills h2 {
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+.skills ul {
+    list-style: none;
+    padding-left: 1em;
+}
+
+.skills ul li {
+    margin-bottom: 0.4em;
+    padding-left: 1.2em;
+    position: relative;
+}
+
+.skills ul li::before {
+    content: '💻';
+    position: absolute;
+    left: 0;
+}
+
+.objective {
+    font-style: italic;
+    margin-top: 0.5em;
+}
+
+.project.future {
+    border-left: 4px solid #ccc;
+    padding-left: 1em;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+/* ====================== */
+/*      MODO OSCURO       */
+/* ====================== */
+
+.dark-mode {
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+}
+
+.dark-mode header {
+    background-color: #2a2a2a;
+    border-color: #444;
+}
+
+.dark-mode footer {
+    border-color: #444;
+    color: #bbb;
+}
+
+.dark-mode nav a,
+.dark-mode .lang-switcher button,
+.dark-mode .theme-toggle button {
+    color: #82cfff;
+}
+
+.dark-mode nav a:hover,
+.dark-mode .lang-switcher button:hover {
+    color: #47a8ff;
+    text-decoration: underline;
+}
+
+.dark-mode .cv-links a {
+    background-color: #3683ba;
+}
+
+.dark-mode .cv-links a:hover {
+    background-color: #2b6b9a;
+}
+
+.dark-mode .project:hover {
+    background-color: #2f3b4c;
+}
+
+/* Mejora de contraste en modo oscuro */
+.dark-mode .project h3 a {
+    color: #82cfff;
+}
+
+.dark-mode .project h3 a:hover {
+    color: #47a8ff;
+    text-decoration: underline;
+}
+
+.dark-mode a {
+    color: #e0dfdf;
+}
+
+.dark-mode a:hover {
+    color: #47a8ff;
+    text-decoration: underline;
+}
+
+.project-nav {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.nav-btn {
+    background-color: #005f99;
+    color: white;
+    padding: 0.6em 1.2em;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-btn:hover {
+    background-color: #004577;
+    transform: translateY(-2px);
+}
+
+.dark-mode .nav-btn {
+    background-color: #3683ba;
+    color: white;
+}
+
+.dark-mode .nav-btn:hover {
+    background-color: #2b6b9a;
+}
+  
+.fade-in {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.project-position {
+    margin-top: 1em;
+    font-size: 0.95em;
+    color: #555;
+    text-align: center;
+    width: 100%;
+}
+
+.dark-mode .project-position {
+    color: #aaa;
+}
+
+/* ====================== */
+/*     RESPONSIVE (MÓVIL) */
+/* ====================== */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+        padding-top: 1em;
+    }
+
+    .cv-links a {
+        display: block;
+        margin-bottom: 0.5em;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    .project {
+        padding: 0.8em;
+    }
+
+    #site-title {
+        font-size: 1.2em;
+    }
+
+    .profile-img {
+        width: 120px;
+        margin: auto;
+    }
+}

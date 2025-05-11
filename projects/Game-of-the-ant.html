@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ant Dungeon Game – IgnacioSerena</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <script defer src="../assets/js/lang.js"></script>
+  <script defer src="../assets/js/theme.js"></script>
+  <script defer src="../assets/js/project_nav.js"></script>
+</head>
+<body>
+  <header>
+    <h1 id="site-title">Ignacio Serena Montiel</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html" data-i18n="nav.home"></a></li>
+        <li><a href="../projects.html" data-i18n="nav.projects"></a></li>
+        <li><a href="../contact.html" data-i18n="nav.contact"></a></li>
+        <li class="lang-switcher">
+          <div class="dropdown">
+            <button class="dropbtn">
+              <img id="current-flag" src="../assets/img/flags/en.svg" alt="Language" />
+            </button>
+            <div class="dropdown-content">
+              <img src="../assets/img/flags/en.svg" onclick="setLang('en')" alt="English" />
+              <img src="../assets/img/flags/es.svg" onclick="setLang('es')" alt="Español" />
+            </div>
+          </div>
+        </li>
+        <li class="theme-toggle">
+          <button onclick="toggleTheme()" id="theme-button">🌙</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="fade-in">
+    <h2 data-i18n="game.title"></h2>
+
+    <p data-i18n="game.desc"></p>
+
+    <h3 data-i18n="game.features"></h3>
+    <ul>
+      <li data-i18n="game.f1"></li>
+      <li data-i18n="game.f2"></li>
+      <li data-i18n="game.f3"></li>
+    </ul>
+
+    <h3 data-i18n="game.learning"></h3>
+    <p data-i18n="game.learning_text"></p>
+  </main>
+
+  <footer>
+    <p>© 2025 Ignacio Serena Montiel — IgnacioSerena. <span data-i18n="footer.license"></span>
+      <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>
+    </p>
+  </footer>
+</body>
+</html>

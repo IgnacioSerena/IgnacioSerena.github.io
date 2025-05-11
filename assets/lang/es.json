@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "bio": {
+    "summary": "Estudiante de Ingeniería Informática con gran interés en inteligencia artificial y machine learning. Este es mi espacio personal donde comparto proyectos técnicos y aprendizajes.",
+    "objective": "💼 Buscando prácticas relacionadas con inteligencia artificial o machine learning (a partir de junio de 2025)."
+  },
+  "download": {
+    "cv_en": "Descargar CV (EN)",
+    "cv_es": "Descargar CV (ES)"
+  },
+  "footer": {
+    "license": "Este sitio está licenciado bajo"
+  },
+  "projects": {
+    "title": "Proyectos seleccionados",
+    "http_server_title": "Servidor HTTP en C",
+    "http_server": "Servidor web de bajo nivel que gestiona solicitudes GET, POST y OPTIONS con sockets en C.",
+    "Game-of-the-ant_title": "Juego de la hormiga",
+    "Game-of-the-ant": "Juego de mazmorras en arte ascii en el que eres una hormiga.",
+    "Sistema-Domotico_title": "Sistema Domótico",
+    "Sistema-Domótico": "Aplicación que simula un sistema domótico mediante colas de mensajes, usando discord como interfaz.",
+    "coming_soon_title": "🚧 Más proyectos próximamente",
+    "coming_soon_desc": "Actualmente estoy trabajando en nuevos proyectos relacionados con ciberseguridad, redes y backend. ¡Muy pronto habrá novedades!"
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "No dudes en escribirme a través de cualquiera de los siguientes canales:"
+  },
+  "skills": {
+    "title": "🛠️ Habilidades Técnicas",
+    "python": "Python – ⭐⭐⭐⭐☆",
+    "c": "C – ⭐⭐⭐☆☆",
+    "java": "Java – ⭐⭐☆☆☆",
+    "sql": "SQL – ⭐☆☆☆☆",
+    "django": "Django – ⭐⭐☆☆☆",
+    "git": "Git / GitHub – ⭐⭐⭐⭐☆",
+    "linux": "Linux – ⭐⭐⭐☆☆",
+    "redes": "Redes – ⭐⭐⭐☆☆",
+    "si": "Sistemas Informaticos – ⭐⭐⭐☆☆",
+    "gestion": "Gestión y planificación de proyectos ⭐⭐☆☆☆",
+    "ágiles": "SCRUM – ⭐⭐⭐☆☆"
+  },
+  "game": {
+    "title": "Juego de la hormiga",
+    "desc": "Juego programado en C con arte ASCII, donde eres uno hormiga que tiene que completar una mazmorra",
+    "features": "🔍 Funcionalidades clave",
+    "f1":"Arte ASCII",
+    "f2":"Diseño de múltiples mecánicas",
+    "f3":"Organización del código",
+    "learning": "📌 Aprendizajes",
+    "learning_text": "Es el primer proyecto que hice al entrar a la carrera, donde aprendimos a soltarnos en C, así como a trabajar en equipo usando Github",
+    "back": "← Volver a Proyectos"
+  },
+  "http": {
+    "title": "🖧 Servidor HTTP en C",
+    "desc": "Servidor HTTP ligero escrito en C puro, diseñado para manejar solicitudes HTTP básicas mediante programación de sockets a bajo nivel.",
+    "features": "🔍 Funcionalidades clave",
+    "f1": "Soporta métodos GET, POST y OPTIONS.",
+    "f2": "Sin librerías externas: solo llamadas al sistema y sockets.",
+    "f3": "Análisis manual de cabeceras y contenido HTTP.",
+    "f4": "Gestión robusta de conexiones (accept, fork, send, close).",
+    "learning": "📌 Aprendizajes",
+    "learning_text": "Profundicé en el protocolo TCP/IP, aprendí a analizar HTTP manualmente y practiqué la depuración de concurrencia y manejo de cabeceras a bajo nivel. Este proyecto consolidó mis conocimientos tanto en redes como en programación de sistemas.",
+    "back": "← Volver a Proyectos"
+  },
+  "domotica": {
+    "title": "Sistema de domótica",
+    "desc": "Simula un sistema de domótica basado en colas de mensajes, con persistencia de datos, control de reglas, diferentes tipos de dispositivos, y usa como interfaz Discord. Este proyecto me permitió comprender las colas de mensaje, así como trabajar con interfaces diferentes a las usuales.",
+    "features": "🔍 Funcionalidades clave",
+    "f1": "Uso de colas de mensajes de Mosquitto",
+    "f2": "Diferentes tipos de medidores(hora, temperatura, switch, etc) para dispositivos",
+    "f3": "Definición de reglas para establecer estados de los dispositivos",
+    "f4": "Simulación de un sistema distribuido, con persistencia de datos",
+    "learning": "📌 Aprendizajes",
+    "learning_text": "Aprendí a usar la librería paho(Mosquitto), así como a diseñar y organizar correctamente un sistema distribuido. Ademas, aprendrí a implementar una interfaz gráfica usando una aplicación tan popular como lo es Discord.",
+    "back": "← Volver a Proyectos"
+  },
+  "project": {
+    "prev": "← Anterior",
+    "next": "Siguiente →",
+    "back": "← Volver a Proyectos"
+  }
+
+}
+  

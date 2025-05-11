@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "bio": {
+    "summary": "Computer Engineering student with a strong interest in artificial intelligence and machine learning. This is my personal space where I share technical projects and learning experiences.",
+    "objective": "💼 Looking for internships related to artificial intelligence or machine learning (starting June 2025)."
+  },
+  "download": {
+    "cv_en": "Download CV (EN)",
+    "cv_es": "Download CV (ES)"
+  },
+  "footer": {
+    "license": "This site is licensed under"
+  },
+  "projects": {
+    "title": "Selected Projects",
+    "http_server_title": "HTTP Server in C",
+    "http_server": "Low-level web server handling GET, POST, and OPTIONS requests using sockets in C.",
+    "Game-of-the-ant_title": "Ant Dungeon Game",
+    "Game-of-the-ant": "ASCII-art dungeon game where you play as an ant.",
+    "Sistema-Domotico_title": "Home Automation System",
+    "Sistema-Domótico": "Application that simulates a home automation system using message queues, with Discord as the user interface.",
+    "coming_soon_title": "🚧 More Projects Coming Soon",
+    "coming_soon_desc": "I'm currently working on new projects related to cybersecurity, networking, and backend. Stay tuned for updates!"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Feel free to reach out through any of the following channels:"
+  },
+  "skills": {
+    "title": "🛠️ Technical Skills",
+    "python": "Python – ⭐⭐⭐⭐☆",
+    "c": "C – ⭐⭐⭐☆☆",
+    "java": "Java – ⭐⭐☆☆☆",
+    "sql": "SQL – ⭐☆☆☆☆",
+    "django": "Django – ⭐⭐☆☆☆",
+    "git": "Git / GitHub – ⭐⭐⭐⭐☆",
+    "linux": "Linux – ⭐⭐⭐☆☆",
+    "redes": "Networking – ⭐⭐⭐☆☆",
+    "si": "Computer Systems – ⭐⭐⭐☆☆",
+    "gestion": "Project Management & Planning – ⭐⭐☆☆☆",
+    "ágiles": "SCRUM – ⭐⭐⭐☆☆"
+  },
+  "game": {
+    "title": "Ant Dungeon Game",
+    "desc": "ASCII-art dungeon game coded in C, where you play as an ant navigating through levels.",
+    "features": "🔍 Key Features",
+    "f1": "ASCII art",
+    "f2": "Multiple game mechanics",
+    "f3": "Organized code structure",
+    "learning": "📌 Learning Outcomes",
+    "learning_text": "This was my first university project, where we learned to work with C and collaborate using GitHub.",
+    "back": "← Back to Projects"
+  },
+  "http": {
+    "title": "🖧 HTTP Server in C",
+    "desc": "Lightweight HTTP server written in pure C, designed to handle basic HTTP requests through low-level socket programming.",
+    "features": "🔍 Key Features",
+    "f1": "Supports GET, POST, and OPTIONS methods.",
+    "f2": "No external libraries: only system calls and sockets.",
+    "f3": "Manual parsing of HTTP headers and content.",
+    "f4": "Robust connection handling (accept, fork, send, close).",
+    "learning": "📌 Learning Outcomes",
+    "learning_text": "I deepened my understanding of the TCP/IP protocol, learned manual HTTP parsing, and practiced concurrency debugging and low-level header management. This project solidified my skills in both networking and systems programming.",
+    "back": "← Back to Projects"
+  },
+  "domotica": {
+    "title": "Home Automation System",
+    "desc": "Simulates a home automation system using message queues, with data persistence, rule control, multiple device types, and Discord as an interface. This project helped me understand message queues and work with non-traditional user interfaces.",
+    "features": "🔍 Key Features",
+    "f1": "Uses Mosquitto message queues",
+    "f2": "Various types of sensors (time, temperature, switch, etc.) for devices",
+    "f3": "Rule definitions to manage device states",
+    "f4": "Simulation of a distributed system with data persistence",
+    "learning": "📌 Learning Outcomes",
+    "learning_text": "I learned to use the Paho (Mosquitto) library and how to design and organize a distributed system. I also implemented a graphical interface using Discord, a widely used app.",
+    "back": "← Back to Projects"
+  },
+  "project": {
+    "prev": "← Previous",
+    "next": "Next →",
+    "back": "← Back to Projects"
+  }
+}

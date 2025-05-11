@@ -1,0 +1,80 @@
+<!-- Página principal https://paterson3c.github.io/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ignacio Serena Montiel</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/lang.js"></script>
+  <script defer src="assets/js/theme.js"></script>
+</head>
+<body>
+  <header>
+    <h1 id="site-title">Ignacio Serena Montiel</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home"></a></li>
+        <li><a href="projects.html" data-i18n="nav.projects"></a></li>
+        <li><a href="contact.html" data-i18n="nav.contact"></a></li>
+        <li class="lang-switcher">
+          <div class="dropdown">
+            <button class="dropbtn">
+              <img id="current-flag" src="assets/img/flags/en.svg" alt="Language" />
+            </button>
+            <div class="dropdown-content">
+              <img src="assets/img/flags/en.svg" onclick="setLang('en')" alt="English" />
+              <img src="assets/img/flags/es.svg" onclick="setLang('es')" alt="Español" />
+            </div>
+          </div>
+        </li>
+        <li class="theme-toggle">
+          <button onclick="toggleTheme()" id="theme-button">🌙</button>
+        </li>
+      </ul>      
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <img src="assets/img/profile.jpg" alt="Profile picture" class="profile-img" />
+      <p data-i18n="bio.summary"></p>
+      <p data-i18n="bio.objective" class="objective"></p>
+    </section>
+  </main>
+
+  <section class="certifications">
+    <h2 data-i18n="cert.title"></h2>
+    <ul>
+      <li data-i18n="cert.ccncert"></li>
+      <li data-i18n="cert.utad"></li>
+      <li data-i18n="cert.tryhackme"></li>
+    </ul>
+  </section> 
+
+  <section class="skills">
+    <h2 data-i18n="skills.title"></h2>
+    <ul>
+      <li data-i18n="skills.python"></li>
+      <li data-i18n="skills.c"></li>
+      <li data-i18n="skills.docker"></li>
+      <li data-i18n="skills.git"></li>
+      <li data-i18n="skills.linux"></li>
+      <li data-i18n="skills.cyber"></li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="cv-links">
+      <a href="cv/CV_EN.pdf" target="_blank" data-i18n="download.cv_en"></a>
+      <a href="cv/CV_ES.pdf" target="_blank" data-i18n="download.cv_es"></a>
+    </div>
+  </section>
+  
+  <footer>
+    <p>© 2025 Ignacio Serena Montiel — IgnacioSerena. <span data-i18n="footer.license"></span>
+      <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>
+    </p>
+  </footer>
+</body>
+</html>
