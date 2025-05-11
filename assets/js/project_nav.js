@@ -11,16 +11,18 @@ function getTranslation(langData, key) {
 function renderProjectNav(langData) {
     const currentFile = location.pathname.split("/").pop();
     const index = projectPages.findIndex(p => p.file === currentFile);
-    console.log("Renderizando navegación para:", currentFile);  // Aquí
-
     if (index === -1) return;  // Si no se encuentra el archivo en el array, no hace nada
+
+    // Verifica si ya existe una barra de navegación
+    const existingNav = document.querySelector(".project-nav");
+    if (existingNav) {
+        // Si ya existe, elimina la barra de navegación anterior
+        existingNav.remove();
+    }
 
     const navContainer = document.createElement("div");
     navContainer.className = "project-nav";
 
-    // Aquí puedes agregar más logs para ver si la lógica de navegación se ejecuta bien
-    console.log("Índice del proyecto:", index);
-    
     if (index > 0) {
         const prev = document.createElement("a");
         prev.href = projectPages[index - 1].file;
@@ -48,6 +50,7 @@ function renderProjectNav(langData) {
         navContainer.appendChild(next);
     }
 
+    // Agregar la barra de navegación al contenedor 'main'
     const mainElement = document.querySelector("main");
     if (mainElement) {
         mainElement.appendChild(navContainer);
