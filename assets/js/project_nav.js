@@ -9,12 +9,11 @@ function getTranslation(langData, key) {
 }
 
 function renderProjectNav(langData) {
+    document.querySelector(".project-nav")?.remove();  
+
     const currentFile = location.pathname.split("/").pop();
     const index = projectPages.findIndex(p => p.file === currentFile);
     if (index === -1) return;
-
-    const oldNav = document.querySelector(".project-nav");
-    if (oldNav) oldNav.remove();
 
     const navContainer = document.createElement("div");
     navContainer.className = "project-nav";
