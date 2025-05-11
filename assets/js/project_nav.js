@@ -12,6 +12,7 @@ function renderProjectNav(langData) {
     const currentFile = location.pathname.split("/").pop();
     const index = projectPages.findIndex(p => p.file === currentFile);
     if (index === -1) return;
+    if (document.querySelector(".project-nav")) return;
 
     const navContainer = document.createElement("div");
     navContainer.className = "project-nav";
