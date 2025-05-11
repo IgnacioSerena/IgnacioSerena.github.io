@@ -30,14 +30,12 @@ function loadLang(lang) {
         if (translation) el.innerText = translation;
       });
 
-      const currentFile = location.pathname.split("/").pop();
-      const isProjectDetail = projectPages.some(p => p.file === currentFile);
-      if (isProjectDetail) {
+      // Si estamos en una página de proyecto, añade navegación
+      if (location.pathname.includes("/projects/")) {
         renderProjectNav(data);
       }
     });
 }
-
 
 window.addEventListener('DOMContentLoaded', () => {
   const lang = localStorage.getItem('lang') || defaultLang;
