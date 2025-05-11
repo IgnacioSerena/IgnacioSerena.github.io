@@ -9,10 +9,11 @@ function getTranslation(langData, key) {
 }
 
 function renderProjectNav(langData) {
+    document.querySelector(".project-nav")?.remove();  
+
     const currentFile = location.pathname.split("/").pop();
     const index = projectPages.findIndex(p => p.file === currentFile);
     if (index === -1) return;
-    if (document.querySelector(".project-nav")) return;
 
     const navContainer = document.createElement("div");
     navContainer.className = "project-nav";
@@ -44,9 +45,5 @@ function renderProjectNav(langData) {
         navContainer.appendChild(next);
     }
 
-    const navPlaceholder = document.getElementById("project-nav");
-    if (navPlaceholder) {
-        navPlaceholder.innerHTML = "";
-        navPlaceholder.appendChild(navContainer);
-    }
+    document.querySelector("main").appendChild(navContainer);
 }
