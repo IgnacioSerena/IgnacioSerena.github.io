@@ -24,12 +24,10 @@ Welcome to the source code of my personal portfolio hosted on GitHub Pages.
 │   ├── js/lang.js          # Language switching script
 │   ├── lang/en.json        # English translations
 │   ├── lang/es.json        # Spanish translations
-│   └── lang/fr.json        # French translations
 ├── assets/img/profile.jpg # Profile picture (editable)
 ├── cv/
 │   ├── CV_EN.pdf
 │   ├── CV_ES.pdf
-│   └── CV_FR.pdf
 └── LICENSE                 # CC BY-NC-ND 4.0
 ```
 
@@ -44,4 +42,4 @@ Note: This is a personal portfolio repository. Only the owner can make changes t
 This website is licensed under the [Creative Commons BY-NC-ND 4.0 License](https://creativecommons.org/licenses/by-nc-nd/4.0/).
 
 ---
-Made by Miguel Jesús Paterson González - paterson3c
+Made by Ignacio Serena Montiel - IgnacioSerena
