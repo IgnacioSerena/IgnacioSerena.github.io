@@ -9,14 +9,14 @@ function getTranslation(langData, key) {
 }
 
 function renderProjectNav(langData) {
-    console.log('renderProjectNav llamado'); 
+    console.log('renderProjectNav llamado');
     const currentFile = location.pathname.split("/").pop();
     const index = projectPages.findIndex(p => p.file === currentFile);
     if (index === -1) return;
 
     const existingNav = document.querySelector(".project-nav");
     if (existingNav) {
-        console.log('Barra de navegación existente encontrada y eliminada'); 
+        console.log('Barra de navegación existente encontrada y eliminada');
         existingNav.remove();
     }
 
@@ -53,7 +53,7 @@ function renderProjectNav(langData) {
     const mainElement = document.querySelector("main");
     if (mainElement) {
         mainElement.appendChild(navContainer);
-        console.log('Nueva barra de navegación añadida'); 
+        console.log('Nueva barra de navegación añadida');
     } else {
         console.error("No se encuentra el elemento 'main'");
     }
